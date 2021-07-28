@@ -5,13 +5,11 @@ export const Brand = ({ isLarge = false }) => (
   <>
     <div
       className={`flex-col font-head text-center h-11 w-16 ${
-        isLarge && 'h-24 w-36'
+        isLarge && 'h-36 w-36'
       }`}
     >
       <h1
-        className={`text-primary font-bold leading-7 text-4xl ${
-          isLarge && 'text-8xl'
-        }`}
+        className={`text-primary font-bold text-4xl ${isLarge && 'text-8xl'}`}
       >
         hoo
       </h1>
