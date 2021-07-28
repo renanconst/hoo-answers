@@ -4,10 +4,13 @@ module.exports = {
   theme: {
     colors:{
       primary: '#00FF66',
-      secondary: '#313232'
+      secondary: '#313232',
+      tertiary: '#F8F8F8',
+      grey: '#E4E6E8'
     },
     fontFamily: {
-      head: 'Oswald'
+      head: 'Oswald',
+      title: 'poppins',
     },
     extend: {},
   },
