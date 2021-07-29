@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import illustrationImg from '../../assets/images/illustration.svg';
 import { Brand } from '../../components/Brand';
 import { QuestionCard } from '../../components/QuestionCard';
+import './styles.css';
 
 export const Landing = () => (
   <div className="md:flex">
-    <section className="h-screen md:w-3/5 bg-primary flex flex-col items-center justify-center gap-20 font-title">
+    <section className="first-section">
       <img
         className="h-56 md:h-72 lg:h-96"
         src={illustrationImg}
@@ -23,7 +24,7 @@ export const Landing = () => (
         </Link>
       </span>
     </section>
-    <section className="h-screen md:w-2/5 md:overflow-y-auto bg-tertiary flex flex-col items-center text-secondary p-8">
+    <section className="second-section">
       <Brand isLarge />
       <hr className="border-2 w-60 my-4 border-grey" />
       <h2 className="font-title text-xl lg:text-2xl"> Perguntas Recentes </h2>

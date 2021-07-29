@@ -1,0 +1,5 @@
+.question-card {
+  @apply w-72 lg:w-96 h-28 bg-tertiary shadow-md rounded-lg;
+  @apply p-4 font-semibold flex flex-col content-between;
+  @apply border-2 border-grey hover:bg-grey duration-200;
+}
