@@ -3,7 +3,7 @@ import P from 'prop-types';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-export const QuestionCard = ({ children, link }) => (
+export const QuestionLink = ({ children, link }) => (
   <Link className="question-card" to={link}>
     <p className="font-title text-base lg:text-xl h-2/3 text-secondary">
       {children}
@@ -12,7 +12,7 @@ export const QuestionCard = ({ children, link }) => (
   </Link>
 );
 
-QuestionCard.propTypes = {
+QuestionLink.propTypes = {
   children: P.string.isRequired,
   link: P.string.isRequired,
 };

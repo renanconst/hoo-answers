@@ -2,8 +2,3 @@
   @apply h-screen bg-primary flex flex-col;
   @apply items-center justify-center gap-20 font-title;
 };
-
-.second-section{
-  @apply h-screen md:overflow-y-auto bg-tertiary;
-  @apply flex flex-col items-center text-secondary p-8;
-}

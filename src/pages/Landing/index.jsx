@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import illustrationImg from '../../assets/images/illustration.svg';
 import { Brand } from '../../components/Brand';
-import { QuestionCard } from '../../components/QuestionCard';
+import { QuestionLink } from '../../components/QuestionLink';
 import './styles.css';
 
 export const Landing = () => (
@@ -24,16 +24,16 @@ export const Landing = () => (
         </Link>
       </span>
     </section>
-    <section className="second-section md:w-2/5">
+    <section className="h-screen md:overflow-y-auto bg-tertiary flex flex-col items-center text-secondary p-8 md:w-2/5">
       <Brand isLarge />
       <hr className="border-2 w-60 my-4 border-grey" />
       <h2 className="font-title text-xl lg:text-2xl"> Perguntas Recentes </h2>
       <div className="my-4 flex flex-col gap-3 pb-4">
-        <QuestionCard link="#">Como formatar data em javascript?</QuestionCard>
-        <QuestionCard link="#">Oque é programação?</QuestionCard>
-        <QuestionCard link="#">
+        <QuestionLink link="#">Como formatar data em javascript?</QuestionLink>
+        <QuestionLink link="#">Oque é programação?</QuestionLink>
+        <QuestionLink link="#">
           Para que serve a linguagem de programação Javascript?
-        </QuestionCard>
+        </QuestionLink>
       </div>
     </section>
   </div>
