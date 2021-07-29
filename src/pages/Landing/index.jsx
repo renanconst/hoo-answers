@@ -7,7 +7,7 @@ import './styles.css';
 
 export const Landing = () => (
   <div className="md:flex">
-    <section className="first-section">
+    <section className="first-section md:w-3/5">
       <img
         className="h-56 md:h-72 lg:h-96"
         src={illustrationImg}
@@ -24,7 +24,7 @@ export const Landing = () => (
         </Link>
       </span>
     </section>
-    <section className="second-section">
+    <section className="second-section md:w-2/5">
       <Brand isLarge />
       <hr className="border-2 w-60 my-4 border-grey" />
       <h2 className="font-title text-xl lg:text-2xl"> Perguntas Recentes </h2>
