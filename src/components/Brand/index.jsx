@@ -4,7 +4,7 @@ import React from 'react';
 export const Brand = ({ isLarge = false }) => (
   <>
     <div
-      className={`flex-col font-head text-center h-11 w-16 ${
+      className={`flex flex-col font-head text-center h-16 w-16 ${
         isLarge && 'h-36 w-36'
       }`}
     >
