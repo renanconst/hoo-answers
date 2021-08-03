@@ -1,10 +1,13 @@
 import React from 'react';
 import { Brand } from '../Brand';
 import { Button } from '../Button';
+import { UserCard } from '../UserCard';
 import './styles.css';
 
 export const Header = () => {
   const windowWidth = window.innerWidth;
+
+  const isLogin = true;
 
   return (
     <header className="header">
@@ -16,8 +19,18 @@ export const Header = () => {
           func={() => 0}
           type="button"
         />
-        {windowWidth > 640 && (
-          <Button title="Conectar" hasBackground func={() => 0} type="button" />
+
+        {isLogin ? (
+          <UserCard imgLink="" isVisibleName={false} name="test" />
+        ) : (
+          windowWidth > 640 && (
+            <Button
+              title="Conectar"
+              hasBackground
+              func={() => 0}
+              type="button"
+            />
+          )
         )}
       </div>
     </header>

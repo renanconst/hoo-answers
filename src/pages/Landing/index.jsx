@@ -29,9 +29,11 @@ export const Landing = () => (
       <hr className="border-2 w-60 my-4 border-grey" />
       <h2 className="font-title text-xl lg:text-2xl"> Perguntas Recentes </h2>
       <div className="my-4 flex flex-col gap-3 pb-4">
-        <QuestionLink link="#">Como formatar data em javascript?</QuestionLink>
-        <QuestionLink link="#">Oque é programação?</QuestionLink>
-        <QuestionLink link="#">
+        <QuestionLink link="questions">
+          Como formatar data em javascript?
+        </QuestionLink>
+        <QuestionLink link="questions">Oque é programação?</QuestionLink>
+        <QuestionLink link="questions">
           Para que serve a linguagem de programação Javascript?
         </QuestionLink>
       </div>

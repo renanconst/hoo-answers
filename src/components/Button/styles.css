@@ -1,5 +1,5 @@
 .btn {
-  @apply font-semibold text-secondary text-lg px-3;
+  @apply font-semibold text-secondary text-base md:text-lg px-3;
   @apply py-1 rounded-xl duration-200 hover:bg-grey;
 }
 

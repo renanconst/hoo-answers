@@ -11,6 +11,7 @@ module.exports = {
     fontFamily: {
       head: 'Oswald',
       title: 'poppins',
+      roboto: 'roboto',
     },
     extend: {},
   },
