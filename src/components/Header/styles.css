@@ -1,0 +1,4 @@
+.header {
+  @apply w-screen shadow-md bg-tertiary h-16 flex;
+  @apply justify-between items-center px-6 sm:px-12;
+}

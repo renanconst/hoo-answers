@@ -1,0 +1,4 @@
+.first-section {
+  @apply h-screen bg-primary flex flex-col;
+  @apply items-center justify-center gap-20 font-title;
+};
