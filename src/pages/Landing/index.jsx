@@ -17,7 +17,7 @@ export const Landing = () => (
         <h3 className="font-bold text-secondary text-lg md:text-2xl">
           Tire suas maiores dúvidas aqui
         </h3>
-        <Link to="/">
+        <Link to="/questions/ask">
           <h1 className="text-tertiary  text-3xl md:text-4xl font-bold">
             Faça sua pergunta
           </h1>

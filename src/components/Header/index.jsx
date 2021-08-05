@@ -1,33 +1,42 @@
 import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 import { Brand } from '../Brand';
 import { Button } from '../Button';
 import { UserCard } from '../UserCard';
 import './styles.css';
 
 export const Header = () => {
+  const { signInWithGoogle, user } = useAuth();
+  const history = useHistory();
   const windowWidth = window.innerWidth;
-
-  const isLogin = true;
 
   return (
     <header className="header">
-      <Brand isLarge={false} />
+      <Link to="/">
+        <Brand isLarge={false} />
+      </Link>
+
       <div className="flex gap-2">
         <Button
           title="Perguntar"
           hasBackground={false}
-          func={() => 0}
+          func={() => history.push('/questions/ask')}
           type="button"
         />
 
-        {isLogin ? (
-          <UserCard imgLink="" isVisibleName={false} name="test" />
+        {user ? (
+          <UserCard
+            imgLink={user.avatar}
+            isVisibleName={false}
+            name={user.name}
+          />
         ) : (
           windowWidth > 640 && (
             <Button
               title="Conectar"
               hasBackground
-              func={() => 0}
+              func={signInWithGoogle}
               type="button"
             />
           )
