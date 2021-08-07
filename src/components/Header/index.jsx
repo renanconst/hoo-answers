@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import { Brand } from '../Brand';
 import { Button } from '../Button';
@@ -9,37 +9,37 @@ import './styles.css';
 export const Header = () => {
   const { signInWithGoogle, user } = useAuth();
   const history = useHistory();
-  const windowWidth = window.innerWidth;
+  const location = useLocation();
+
+  const redirectToAsk = () => {
+    if (!user) {
+      return signInWithGoogle();
+    }
+
+    return history.push('/questions/ask');
+  };
 
   return (
     <header className="header">
       <Link to="/">
         <Brand isLarge={false} />
       </Link>
-
       <div className="flex gap-2">
-        <Button
-          title="Perguntar"
-          hasBackground={false}
-          func={() => history.push('/questions/ask')}
-          type="button"
-        />
+        {location.pathname !== '/questions/ask' && (
+          <Button
+            title="Perguntar"
+            hasBackground={false}
+            func={redirectToAsk}
+            type="button"
+          />
+        )}
 
-        {user ? (
+        {user && (
           <UserCard
             imgLink={user.avatar}
-            isVisibleName={false}
+            isVisibleName={location.pathname === '/questions/ask'}
             name={user.name}
           />
-        ) : (
-          windowWidth > 640 && (
-            <Button
-              title="Conectar"
-              hasBackground
-              func={signInWithGoogle}
-              type="button"
-            />
-          )
         )}
       </div>
     </header>

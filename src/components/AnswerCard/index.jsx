@@ -1,12 +1,22 @@
 import React from 'react';
-import P from 'prop-types';
+import { useQuestion } from '../../hooks/useQuestion';
 import { UserCard } from '../UserCard';
 
-export const AnswerCard = ({ answers }) => {
-  const Questions = answers.map((answer, index) => (
-    <div key={answer.id} className="p-8 flex flex-col gap-8 w-full">
-      <p>{answer.answers}</p>
-      <UserCard imgLink="" isVisibleName name={answer.user} />
+export const AnswerCard = () => {
+  const { answers } = useQuestion();
+
+  const answersArray = Object.entries(answers);
+
+  const Questions = answersArray.map((answer, index) => (
+    <div key={answer[0]} className="p-8 flex flex-col gap-8 w-full">
+      <p>{answer[1].answer}</p>
+
+      <UserCard
+        imgLink={answer[1].author.avatar}
+        isVisibleName
+        name={answer[1].author.name}
+      />
+
       {index !== answers.length - 1 && (
         <hr className="border-2 border-grey w-11/12" />
       )}
@@ -18,8 +28,4 @@ export const AnswerCard = ({ answers }) => {
       {Questions}
     </div>
   );
-};
-
-AnswerCard.propTypes = {
-  answers: P.arrayOf(P.object).isRequired,
 };
