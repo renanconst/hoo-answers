@@ -1,36 +1,45 @@
 import React from 'react';
+import { Link, useHistory, useLocation } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 import { Brand } from '../Brand';
 import { Button } from '../Button';
 import { UserCard } from '../UserCard';
 import './styles.css';
 
 export const Header = () => {
-  const windowWidth = window.innerWidth;
+  const { signInWithGoogle, user } = useAuth();
+  const history = useHistory();
+  const location = useLocation();
 
-  const isLogin = true;
+  const redirectToAsk = () => {
+    if (!user) {
+      return signInWithGoogle();
+    }
+
+    return history.push('/questions/ask');
+  };
 
   return (
     <header className="header">
-      <Brand isLarge={false} />
+      <Link to="/">
+        <Brand isLarge={false} />
+      </Link>
       <div className="flex gap-2">
-        <Button
-          title="Perguntar"
-          hasBackground={false}
-          func={() => 0}
-          type="button"
-        />
+        {location.pathname !== '/questions/ask' && (
+          <Button
+            title="Perguntar"
+            hasBackground={false}
+            func={redirectToAsk}
+            type="button"
+          />
+        )}
 
-        {isLogin ? (
-          <UserCard imgLink="" isVisibleName={false} name="test" />
-        ) : (
-          windowWidth > 640 && (
-            <Button
-              title="Conectar"
-              hasBackground
-              func={() => 0}
-              type="button"
-            />
-          )
+        {user && (
+          <UserCard
+            imgLink={user.avatar}
+            isVisibleName={location.pathname === '/questions/ask'}
+            name={user.name}
+          />
         )}
       </div>
     </header>
