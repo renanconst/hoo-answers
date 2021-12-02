@@ -9,7 +9,7 @@
 ![Tailwind](https://img.shields.io/static/v1?label=TailwindCss&message=Yes&color=06B6D4&style=flat)
 </div>
 
-!["screenshot"](.\docs\screenshots\screenshot.png)
+!["screenshot"](https://github.com/renanconst/hoo-answers/blob/main/docs/screenshots/screenshot.png)
 <p style="align">
 
 [Sobre](#about) •
