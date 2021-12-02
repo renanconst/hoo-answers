@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+<h1 style="text-align: center;">
+    Hoo Anwsers
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div style="text-align: center;">
 
-## Available Scripts
+![licence mit](https://img.shields.io/static/v1?label=licence&message=MIT&color=8AB803&flat)
+![ReactJS](https://img.shields.io/static/v1?label=ReactJS&message=Yes&color=61DAFB&flat)
+![Tailwind](https://img.shields.io/static/v1?label=TailwindCss&message=Yes&color=06B6D4&style=flat)
+</div>
 
-In the project directory, you can run:
+!["screenshot"](.\docs\screenshots\screenshot.png)
+<p style="align">
 
-### `yarn start`
+[Sobre](#about) •
+[Como executar](#run) •
+[Tecnologias](#technologies) •
+[Licença](#licence)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+<div id="about">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sobre o projeto
 
-### `yarn build`
+Hoo anwers é uma aplicação de perguntas e respostas
+desenvolvida com React e Tailwind CSS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div id="run">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como executar o projeto
 
-### `yarn eject`
+Antes de começar é necessário ter as seguintes ferramentas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [Git](https://git-scm.com/downloads)
+* [Node.Js](https://nodejs.org/en/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Com as ferramentas instaladas, basta executar os seguintes comandos no seu terminal.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Clonar este repositório
+$ git clone https://github.com/renanconst/hoo-answers.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Acessar a pasta do projeto
+$ cd hoo-answers
 
-## Learn More
+# Instale as dependências
+$ yarn install # or npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação
+$ yarn start # or npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# O servidor inciará na porta:3000 - acesse http://localhost:3333
+```
 
-### Code Splitting
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<div id="technologies">
 
-### Analyzing the Bundle Size
+## Tecnologias utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* [ReactJs](https://reactjs.org/) em conjunto com outros pacotes.
+* [Tailwind CSS](https://tailwindcss.com/) para utilizar a abordagem Utility-First.
+* [Firebase](https://firebase.google.com/) utilizando o Realtime Database para armazenar os dados.
 
-### Making a Progressive Web App
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<div id="licence">
 
-### Advanced Configuration
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Esse projeto é um software de código-fonte aberto sob a licença MIT. Veja o arquivo LICENCE para mais detalhes.
 
-### Deployment
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com ♥ por [RenanConst](https://github.com/renanconst).
