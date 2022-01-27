@@ -1,24 +1,13 @@
-<h1 style="text-align: center;">
-    Hoo Anwsers
-</h1>
+# Hoo Anwsers &middot;  ![licence mit](https://img.shields.io/static/v1?label=licence&message=MIT&color=8AB803&flat) ![ReactJS](https://img.shields.io/static/v1?label=ReactJS&message=Yes&color=61DAFB&flat) ![Tailwind](https://img.shields.io/static/v1?label=TailwindCss&message=Yes&color=06B6D4&style=flat)
 
-<div style="text-align: center;">
-
-![licence mit](https://img.shields.io/static/v1?label=licence&message=MIT&color=8AB803&flat)
-![ReactJS](https://img.shields.io/static/v1?label=ReactJS&message=Yes&color=61DAFB&flat)
-![Tailwind](https://img.shields.io/static/v1?label=TailwindCss&message=Yes&color=06B6D4&style=flat)
-</div>
-
-!["screenshot"](https://github.com/renanconst/hoo-answers/blob/main/docs/screenshots/screenshot.png)
-<p style="align">
-
-[Sobre](#about) •
-[Como executar](#run) •
-[Tecnologias](#technologies) •
-[Licença](#licence)
-
+<p align="center">
+  <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#run">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licence">Licença</a>
 </p>
 
+!["screenshot"](https://github.com/renanconst/hoo-answers/blob/main/docs/screenshots/screenshot.png)
 
 <div id="about">
 
